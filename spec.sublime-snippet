@@ -1,0 +1,27 @@
+<snippet>
+  <content><![CDATA[import React from 'react';
+import { mount } from 'enzyme';
+
+import ${1:Component} from '${2:.}';
+
+describe('<${1:Component} />', () => {
+
+  var wrapper, props;
+
+  beforeEach(() => {
+    props = {};
+  });
+
+  afterEach(() => {
+    wrapper.unmount();
+  });
+
+  ${3:}
+
+});]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>spec</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.js</scope>
+  <description>Creates a test spec</description>
+</snippet>
