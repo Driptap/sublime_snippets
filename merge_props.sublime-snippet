@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[const mergeProps = (stateProps, dispatchProps, compProps) => ({
-  ...stateProps, ...dispatchProps, compProps,
+  ...stateProps, ...dispatchProps, ...compProps,
   ${1}
 });]]></content>
 

@@ -1,0 +1,50 @@
+<snippet>
+  <content><![CDATA[import React from 'react';
+import {
+  connect,
+  type Connector,
+} from 'react-redux';
+
+type ReduxProps = {};
+type OwnProps = {};
+type Props = OwnProps & ReduxProps;
+
+export class ${1:Component} extends React.Component <Props> {
+
+  render() {
+    return (
+      ${3:<div />}
+    );
+  }
+}
+
+const mapStateToProps = ({
+  ${2: state}
+}) => ({
+  ${2: state}
+});
+
+const mapDispatchToProps = dispatch => ({
+
+});
+
+const mergeProps = (stateProps, dispatchProps, compProps) => ({
+  ...stateProps, ...dispatchProps, ...compProps,
+});
+
+
+const connector: Connector<OwnProps, Props> = connect(
+  mapStateToProps,
+  mapDispatchToProps,
+  mergeProps
+);
+
+export default connector(${1:Component});
+
+]]>
+
+</content>
+<tabTrigger>flowclasscomponent</tabTrigger>
+<description>Creates a flow typed, redux connected react class component</description>
+<scope>source.js</scope>
+</snippet>

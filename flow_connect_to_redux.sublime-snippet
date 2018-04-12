@@ -1,0 +1,15 @@
+<snippet>
+  <content><![CDATA[const connector: Connector<OwnProps, Props> = connect(
+  mapStateToProps,
+  mapDispatchToProps,
+  mergeProps
+);
+
+export default connector(${1:Component});
+
+]]></content>
+
+  <scope>source.js</scope>
+  <tabTrigger>flowconnect</tabTrigger>
+  <description>Connect component to Redux with flow types</description>
+</snippet>

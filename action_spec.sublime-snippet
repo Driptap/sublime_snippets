@@ -1,0 +1,37 @@
+<snippet>
+  <content><![CDATA[import 'isomorphic-fetch';
+import configureMockStore from 'redux-mock-store';
+import thunk from 'redux-thunk';
+import fetchMock from 'fetch-mock';
+import Faker from 'faker';
+
+import { APIS, STATES } from 'Helpers/constants';
+import * as actions from '.';
+
+const middlewares = [thunk];
+const mockStore = configureMockStore(middlewares);
+
+describe('${1:}', () => {
+
+  let store;
+
+  beforeEach(() => {
+    store = mockStore({});
+  });
+
+
+  afterEach(() => {
+    fetchMock.restore();
+  });
+
+  ${2:}
+
+});
+
+]]></content>
+  <tabTrigger>actionspec</tabTrigger>
+  <scope>source.js</scope>
+  <description>Creates a spec for testing redux actions</description>
+</snippet>
+
+

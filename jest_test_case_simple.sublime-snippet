@@ -1,0 +1,12 @@
+<snippet>
+  <content><![CDATA[
+
+it('${1:should do the thing}', () => {
+  ${2://the thing}
+});
+
+]]></content>
+  <description>Snippet for creating a test case in jest</description>
+  <tabTrigger>it</tabTrigger>
+  <scope>source.js</scope>
+</snippet>
